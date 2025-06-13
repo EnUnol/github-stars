@@ -1,0 +1,135 @@
+
+/* === Base Layout === */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+/* === Header / Home === */
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  margin-bottom: 10px;
+  padding-top: 2%;
+}
+.header-title {
+  margin: 0;
+  text-align: center;
+  flex-grow: 1;
+}
+
+/* === Repository List Box === */
+.scroll-box {
+  width: 90%;
+  max-width: 1200px;
+  height: 70%;
+  max-height: 500px;
+  overflow-y: auto;
+  border: 1px solid black;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* === Individual Repo Card === */
+.repo {
+  background: #fff;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+.repo-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.repo-info h3 {
+  margin: 0;
+}
+.repo-name {
+  margin: 0;
+  font-size: 1.2em;
+}
+.repo-desc {
+  margin: 5px 0 10px;
+  font-size: 0.95em;
+}
+.repo-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.owner-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+.stars {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: bold;
+}
+
+/* === Pagination === */
+.pagination-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+.pagination-btn {
+  border: 1px solid #ccc;
+  background: #fff;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+.pagination-btn.active {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+.pagination-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* === Bottom Navigation Bar === */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: gray;
+  font-size: 0.9em;
+}
+.nav-item.active {
+  color: dodgerblue;
+}
+
