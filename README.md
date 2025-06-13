@@ -28,6 +28,7 @@ src/
 - List most starred GitHub repos created in the last 10 days
 - Responsive layout with clean UI
 - Dynamic pagination with chevrons and ellipsis
+- Infinite scrollable pages option
 - Scrollable result box
 - Bottom navigation bar (Trending / Settings)
 
